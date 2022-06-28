@@ -1,0 +1,5 @@
+try {
+/* CODE */                                    
+} catch (Exception $e) {
+	echo $e->getMessage();
+}

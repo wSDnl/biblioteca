@@ -1,0 +1,121 @@
+
+
+<!-- CSS -->
+<link rel="stylesheet" href="css/loader_peq.css">
+
+
+<!-- ICONES -->
+<link href="../css/styleIcon.css" rel="stylesheet" type="text/css" rel="stylesheet" media="all" />
+<link href="../css/font-awesome.min.css" type="text/css" rel="stylesheet" media="all">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<!-- JQUERY -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+
+
+<!-- RESPOSTA JSON -->
+		<style>
+			#respostaJSON{ 
+				position:fixed; top:40%; left:35%; text-align:center;
+				padding:20px; text-align:center; background-color:#FFFFFF; border:1px solid #999999; border-radius:5px; 
+				width:300px; overflow:hidden; box-shadow: 10px 10px 60px 10px rgba(0,0,0,0.2); font-size: 14px; display:none
+			}
+			@media  (max-width: 1080px) {
+				#respostaJSON{ position:fixed; top:40%; left:10%}
+			}
+		</style>
+		<label id="respostaJSON" class="closeAviso"></label>
+<!-- RESPOSTA JSON -->
+
+
+
+
+
+
+
+
+
+// BARRA DE PROGRESSO
+var matriz = retorno.responseJSON.matriz.split("-");
+var len    = parseInt( matriz.length-1 );
+var progress = 100/len;
+var progressMostra = 0;
+			
+$(matriz).each( function( index , element){
+				
+progressMostra = progressMostra + progress;
+					
+	if(element != ''){
+
+		//console.log("index: "+index+" element: "+element+" Tot: "+len+" progress: "+progressMostra);			 
+		$('#respostaJSON').empty();
+		$('#respostaJSON').css({ display:"block" });
+		$('#respostaJSON').append("Excluindo vendas...<br>");
+		$('#respostaJSON').append("<progress value="+progressMostra+" max='100'></progress> "+progressMostra+"%");
+
+	}
+					
+			
+});
+										
+
+
+
+
+
+// CARREGANDO
+$('#respostaJSON').empty();
+$('#respostaJSON').css({ display:"block" });
+$('#respostaJSON').append("<table width='100%' border='0'><tr><td width='29' align='center'><div class='loader'></div></td><td width='361' align='center'  style='color:#000'>Aguarde...</td></tr></table>");
+
+// SUCESSO
+$('#respostaJSON').empty();
+$('#respostaJSON').css({ display:"block" });
+$('#respostaJSON').append("<table width='100%' border='0'><tr><td width='29' align='center'><label class='icon fa-check' style='color:green; font-size:20px'></label></td><td width='361' align='center'  style='color:#000'>Alterado com sucesso</td></tr></table>");
+setTimeout( function() { $('#respostaJSON').css({ display:"none" }); }, 5000 );
+
+// ERRO
+$('#respostaJSON').empty();
+$('#respostaJSON').css({ display:"block" });
+$('#respostaJSON').append("<table width='100%' border='0'><tr><td width='29' align='center'><label class='icon fa-remove' style='color:red; font-size:20px'></label></td><td width='361' align='center'  style='color:#000'>Erro, tente novamente</td></tr></table>");
+setTimeout( function() { $('#respostaJSON').css({ display:"none" }); }, 5000 );	
+
+// CONFIRMA
+$('#respostaJSON').empty();
+$('#respostaJSON').css({ display:"block" });
+$('#respostaJSON').append("<table width='100%' border='0'><tr><td width='29' align='center'><label class='icon fa-exclamation' style='color:red; font-size:20px'></label></td><td width='361' align='center'  style='color:#000'>Tem certeza que deseja fechar o <strong>Caixa</strong>?</td></tr><tr><td colspan='2' align='center'><input name='' type='button' class='botCinza' value='CANCELAR'> <input name='' type='button' class='botVerde' value='CONFIRMAR' onclick='fecharCaixa()'></td></tr></table>");
+
+
+/***************************************************************************** CLOSE */
+$(document).ready(function(){
+  $(".closeAviso").click(function(){
+    $(this).hide();
+  });
+});
+
+
+
+
+$.ajax({
+url: "php/---.php",
+type: 'POST',
+data: { Jid:id },
+dataType: 'json',
+
+success: function (retorno) {
+},
+		
+complete: function (retorno) {
+console.table(retorno.responseJSON);
+},
+
+error: function (retorno) {
+console.table(retorno);
+},
+
+});
+
+

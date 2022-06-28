@@ -1,0 +1,63 @@
+:root{
+    --tema1:#36648b;
+    --menu:#f2f2f1;
+}
+
+/** ============================= */
+/**             GRID              */
+/** ============================= */
+
+.justifyL{ 
+    display: flex;
+    justify-content: left;
+    align-items:center;
+}
+.justifyR{ 
+    display: flex;
+    justify-content: right;
+    align-items:center;
+}
+.top { grid-area: top; height:40px; background-color: var(--tema1);  color:#fff; text-align:left; }
+.user { grid-area: user; height:40px; background-color: var(--tema1); color:#fff; text-align:right }
+.menu { grid-area: menu; height:100vh; border-right:1px solid #ccc; background-color:var(--menu); transition:0.5s; z-index:200; position:relative; overflow:auto }
+.main { grid-area: main; height:25px;  border-bottom:1px solid #ccc; background-color: #fff; }
+.body { grid-area: body; height:94vh; padding:0; overflow-y: hidden; }        
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'top top top top top user'
+        'menu body body body body body'
+        'menu body body body body body';
+    gap:0;
+    padding:0;
+    border:0;
+}
+
+@media (max-width:1080px){
+    .menu { 
+        grid-area: menu; 
+        left:-200px; 
+        height:100vh; 
+        border-right:1px solid #ccc; 
+        position: absolute; 
+        background-color: var(--menu); 
+        width:200px}
+    .grid-container {
+    display: grid;
+    grid-template-areas:
+        'top top top top top user'
+        'body body body body body body'
+        'body body body body body body';
+    gap:0;
+    padding:0;
+    border:0;
+}
+
+}
+
+.grid-container > div {
+    padding:0px;
+    font-size: 12px;
+    /* overflow:hidden; */
+}

@@ -1,0 +1,16 @@
+<script>
+function frete(url,w,h) {
+var newW = w + 100;
+var newH = h + 100;
+var left = (screen.width-newW)/2;
+var top = (screen.height-newH)/2;
+var newwindow = window.open(url, 'name', 'width='+newW+',height='+newH+',left='+left+',top='+top+', scrollbars=no, status=no, toolbar=no, location=no, menubar=no, resizable=no, fullscreen=no');
+newwindow.resizeTo(newW, newH);
+ 
+//posiciona o popup no centro da tela
+newwindow.moveTo(left, top);
+newwindow.focus();
+return false;
+}
+</script>
+<a href="#" onclick="return frete('http://www.google.com.br', 800, 600)" class="botTopo">Calcular Frete</a>

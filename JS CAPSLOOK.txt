@@ -1,0 +1,22 @@
+
+	<!-- CAPSLOOK -->
+	<style>
+		#respostaJSONCapsLook{ font-size:12px }
+		.aviso{ color:#FF0000; font-size:20px}
+	</style>
+	<br><br>
+	<label id="respostaJSONCapsLook"></label>
+
+
+
+/// VERIFICA SE O CAPSLOOK ESTA AVIVO
+var input = document.getElementById("receberOfertasEmail");
+
+input.addEventListener("keyup", function(event) {
+  if (event.getModifierState("CapsLock")) {
+    $('#respostaJSONCapsLook').empty();
+	$('#respostaJSONCapsLook').append("<label class='icon fa-exclamation-triangle aviso'></label>&nbsp;&nbsp;Caps Look Acionado");
+  } else {
+     $('#respostaJSONCapsLook').empty();
+  }
+});

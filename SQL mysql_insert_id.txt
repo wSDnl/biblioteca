@@ -1,0 +1,2 @@
+// CODIGO DO ULTIMO INSERT
+$... = mysql_insert_id();

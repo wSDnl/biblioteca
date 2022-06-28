@@ -1,0 +1,3 @@
+<input name="email1" type="text" id="email1"  style="text-transform:lowercase;width:390px" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+
+pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"

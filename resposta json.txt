@@ -1,0 +1,15 @@
+$.ajax({
+	url: "php/---.php",
+	type: 'POST',
+	data: { Jid:id },
+	dataType: 'json',
+	success: function (retorno) { },
+	complete: function (retorno) {
+		console.table(retorno.responseJSON);
+	},
+	error: function (retorno) { console.table(retorno); },
+});
+
+<!-- JQUERY -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+

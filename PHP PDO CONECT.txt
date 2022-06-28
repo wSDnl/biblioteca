@@ -1,0 +1,29 @@
+		try {
+		
+			$conn = new PDO(''. CONN .'', USER , PASS );
+			$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+			$stmt = $conn->prepare(" SELECT `id`, `nome` FROM `usuarios` WHERE `email` = :user AND `senha`= :senha ");
+			$stmt->execute( array( 'user' => $user , 'senha' => $pass ) );
+		
+			/// *** CODE
+			$result = $stmt->fetchAll();
+			if ( count($result) ) {
+				foreach($result as $row) {
+					$_SESSION['id'] = $row['id'];
+					$st = 1;
+				}
+			  } else {
+					$st = 0;
+					session_destroy();
+			}
+			  
+			$conn = null;
+			
+		
+		} catch(PDOException $e) {
+			echo 'ERROR: ' . $e->getMessage();
+		}
+		
+		}else{
+			$st = 0;
+	}

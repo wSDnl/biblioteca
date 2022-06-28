@@ -1,0 +1,13 @@
+$hoje = date("Y-m-d");
+$validade = $linha['validade'];
+$amanha = date('Y-m-d', strtotime("+1 days", strtotime($hoje)));
+
+
+
+json_encode($ref = array('idBoleto' => $_POST['enviaIdBoleto']));
+$idBoleto = $ref['idBoleto'];
+
+
+
+
+

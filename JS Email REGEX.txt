@@ -1,0 +1,11 @@
+var email = $('#email').val();
+
+
+		// EMAIL REGEX
+		var regexEmail =  /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
+		var resEmail = regexEmail.exec(email);
+		if(resEmail){ 
+			avisoEmail = 0;
+		}else{
+			avisoEmail = 1;
+		}

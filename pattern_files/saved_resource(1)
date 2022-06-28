@@ -1,0 +1,38 @@
+
+var ftGUID_4228407="452816CE63CB25";
+var ftConfID_4228407="21768734";
+var ftParams_4228407="ftx=&fty=&ftadz=&ftscw=&ft_custom=&ftOBA=1&ft_agentEnv=0&ft_referrer=https%3A%2F%2Fwww.w3schools.com%2Ftags%2Fatt_input_pattern.asp&ft_section=__76997758036995777230435452324880880683&cachebuster=302215.5863680838";
+var ftKeyword_4228407="";
+var ftCustom_4228407="";
+var ftSection_4228407="__76997758036995777230435452324880880683";
+var ftSegment_4228407="um2";
+var ftSegmentList_4228407=[{s:'um2'}];
+var ftRuleMatch_4228407="0";
+var ftTimestamp_4228407="1600094099";
+var ftGeoC2_4228407="br";
+var ftGeoState_4228407="sp";
+var ftGeoCity_4228407="sao paulo";
+var ftISP_4228407="claro brazil";
+var ftSpeed_4228407="broadband";
+var ftDMA_4228407="76009";
+var ftLong_4228407="-46.63";
+var ftLat_4228407="-23.52";
+var ftPostal_4228407="01101-080";
+var ftTimeZone_4228407="-300";
+var ftMobileCarrier_4228407="";
+var ftImp4228407 = {};
+ftImp4228407.privacy = "x";
+ftImp4228407.guidAge = "112";
+ftImp4228407.impID = "0C95CAAE-B227-F960-BD68-9E2DC6CE5C2A";
+ftImp4228407.duid = "FT:452816CE63CB25";
+
+ftImp4228407.ft_tpplid = "";
+ftImp4228407.ft_c = {};
+ftImp4228407.gdpr = "";
+ftImp4228407.gdpr_consent = "";
+ftImp4228407.gdpr_pd = "";
+ftImp4228407.oob_consent = "";
+ftImp4228407.gdprStoredConsent = "";
+ftImp4228407.us_privacy = "";
+
+document.write('<scr'+'ipt src="https://cdn.flashtalking.com/xre/422/4228407/3147753/js/j-4228407-3147753.js" id="ftscript_m4228407" name="ftscript_m4228407"></scr'+'ipt>');

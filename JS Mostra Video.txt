@@ -1,0 +1,24 @@
+<div class="linkMenuTelas" onClick="abreVideo()"><label class="icon fa-film"></label>&nbsp;&nbsp;Gerenciar Dispositivos</div>
+
+
+
+<!-- TUTORIAL -->
+	<label id="JSONVideo"></label>
+<!-- TUTORIAL -->
+
+
+
+.closeVideo{ position:absolute; right:20px; font-size:30px; color: #CCCCCC; cursor:pointer}
+.contentVideo{ position:relative; background-color:#000000}
+
+
+
+
+function abreVideo(){
+	$('#JSONVideo').empty();
+	$('#JSONVideo').append("<div class='contentVideo'><div class='closeVideo'><label class='icon fa-remove' onclick='fechaVideo()'></label></div><center><video width='80%' controls><source src='videos/disp.mp4'  type='video/mp4'></video></center></div>");
+}
+
+function fechaVideo(){
+	$('#JSONVideo').empty();
+}

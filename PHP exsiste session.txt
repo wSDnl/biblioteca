@@ -1,0 +1,9 @@
+
+
+	if(isset($_SESSION["id"])){
+		$session = 1; // TRUE
+	}else {
+		$session = 0; // FALSE
+	}
+
+

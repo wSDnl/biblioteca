@@ -1,0 +1,91 @@
+/// ************************* ///
+/// *** EDIÇÃO AUTOMATICA *** ///
+/// ************************* ///
+
+
+function edit(inp){
+	$('#'+inp).css({ border:"1px solid #ccc" , backgroundColor:"#f5f5f5" });
+}
+function editOut(inp){
+	$('#'+inp).css({ border:"1px solid #fff" , backgroundColor:"#fff" });
+	
+	$('.contentAviso').show();
+	$('#iconeAviso').empty();
+	$('#iconeAviso').append("<center><img id='loader' src='../img/loader.png' /></center>");
+	$('#txtAviso').empty();
+	$('#txtAviso').append("Salvando...");
+	
+	var idUsuario        = $('#idUsuario').val();
+	var idClienteLogado  = $('#idClienteLogado').val();	
+	var nome             = $('#nome').val();
+	var tel              = $('#tel').val();
+	var endereco         = $('#endereco').val();
+	var numero           = $('#numero').val();
+	var bairro           = $('#bairro').val();
+	var cep              = $('#cep').val();
+	var complemento      = $('#complemento').val();
+	var estado           = $('#estado').val();
+	var cidade           = $('#cidade').val();
+	var ponto_referencia = $('#ponto_referencia').val();
+	
+	if( nome != '' && tel != '' && endereco != '' && numero != '' && bairro != '' && cep != '' && estado != '' && cidade != '' ){
+	
+		$.ajax({
+			url: "php/editDados.php",
+			type: 'POST',
+			data: { JidUsuario:idUsuario , JidClienteLogado:idClienteLogado , Jnome:nome , Jtel:tel , Jendereco:endereco , Jnumero:numero , Jbairro:bairro , Jcep:cep , Jcomplemento:complemento , Jestado:estado , Jcidade:cidade , Jponto_referencia:ponto_referencia },
+			dataType: 'json',
+		
+			success: function (retorno) { },
+				
+			complete: function (retorno) {
+				//console.table(retorno.responseJSON);
+				var st = retorno.responseJSON.st;
+				if( st == true ){
+					$('.contentAviso').show();
+					$('#iconeAviso').empty();
+					$('#iconeAviso').append("<center><label class='icon fa-check'></label></center>");
+					$('#txtAviso').empty();
+					$('#txtAviso').append("Salvo");														
+				}else{
+					$('.contentAviso').show();
+					$('#iconeAviso').empty();
+					$('#iconeAviso').append("<center><label class='icon fa-remove'></label></center>");
+					$('#txtAviso').empty();
+					$('#txtAviso').append("Erro, tente novamente");														
+				}
+				
+			},
+		
+			error: function (retorno) { console.table(retorno); },
+		
+		});
+		
+	}else{
+		$('#'+inp).css({ border:"1px solid #fff" });
+		$('.contentAviso').show();
+		$('#iconeAviso').empty();
+		$('#iconeAviso').append("<center><label class='icon fa-remove'></label></center>");
+		$('#txtAviso').empty();
+		$('#txtAviso').append("Preencha os campos vazios");	
+	}
+	
+		
+	setTimeout( function(){ fechaAviso(); } , 1000);														
+	
+}
+
+function fechaAviso(){
+	setTimeout( function(){
+		$('.contentAviso').hide();
+		$('#iconeAviso').empty();
+		$('#txtAviso').empty();
+	},1000);
+}
+
+
+
+
+/// ************************* ///
+/// *** EDIÇÃO AUTOMATICA *** ///
+/// ************************* ///

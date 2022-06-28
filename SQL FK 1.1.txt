@@ -1,0 +1,3 @@
+alter table cliente_status add constraint fk_cliente_status 
+foreign key (fk_cliente_status) 
+references clientes(id); 

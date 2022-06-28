@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)https://cdn.flashtalking.com/121046/3147753/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<style></style>
+		<title>Adobe Process</title>
+		<meta name="ad.size" content="width=160,height=600">
+		<script>
+			var sw, sh, sizeType;
+			sw = 160;
+			sh = 600;
+			sw = Number(sw);
+			sh = Number(sh);
+			var sizeType = sw + "x" + sh;
+		</script>
+		<style>
+		html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+		#banner {
+			position: absolute;
+			width: 160px;
+			height: 600px;
+			overflow: hidden;
+			opacity: 0;
+		}
+		.fs {
+			position: absolute;
+			background-size: 100% 100%;
+			width: 160px;
+			height: 600px;
+			overflow: hidden;
+			top: 0;
+			left: 0;
+		}
+		#outline {
+			position: absolute;
+			width: 158px;
+			height: 598px;
+			border: 1px #000 solid;
+			top: 0;
+			left: 0;
+		}
+		#img1 {
+			background-image: url(img1.jpg);
+		}
+		#img2 {
+			background-image: url(img2.jpg);
+		}
+		#img3 {
+			background-image: url(img3.jpg);
+		}
+		#img4 {
+			background-image: url(img4.jpg);
+		}
+		#text-shadow {
+			background-color: black;
+		}
+		#bottom-bar {
+			background-image: url(bottom-bar.png);
+		}
+		#headline {
+			color: #FFF;
+			position: relative;
+			display: table-cell;
+			vertical-align: middle;
+			font-family: "Adobe Clean", Arial, Helvetica, sans-serif;
+			font-weight: 600;
+			text-align: center;
+			text-shadow: 0px 2px 10px #000;
+			overflow: visible;
+			-webkit-font-smoothing: subpixel-antialiased;
+			letter-spacing: 0.1px;
+		}
+		#tagline {
+			background-image: url(tagline.png);
+		}
+		#logo {
+			background-image: url(logo.png);
+		}
+
+		.butterfly{
+			position: absolute;
+			background-size: 100% 100%;
+			width: 172px;
+			height: 244px;
+			overflow: visible;
+			top: 0;
+			left: 0;
+		}
+		.butterfly-body {
+			background-image: url(butterfly-body.png);
+			top: -86px;
+			left: -122px;
+		}
+		.butterfly-wing {
+			background-image: url(butterfly-wing.png);
+			top: -86px;
+			left: -122px;
+			transform-origin: 40px 90px;
+		}
+
+		#cta {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			color: black;
+			font-family: "Adobe Clean", Arial, Helvetica, sans-serif;
+			font-weight: 600;
+			background-color: white;
+		}
+		#bottom-bar-var {
+			position: absolute;
+			left: 0;
+			top: 0;
+			color: white;
+			font-family: "Adobe Clean", Arial, Helvetica, sans-serif;
+			font-weight: 400;
+			text-align: center;
+			overflow: visible;
+		}
+		.ft-bold {
+			font-weight: 800;
+		}
+		</style>
+	</head>
+	<body>
+	<ft-default clicktag="1">
+		<div id="banner" style="opacity: 1;">
+			<div class="fs" id="img1-pivot" style="transform-origin: 50% 30% 0px; transform: matrix(1, 0, 0, 1, 0, 0);">
+				<div class="fs" id="img1" style="transform-origin: 50% 30% 0px; transform: matrix(1, 0, 0, 1, 0, 0);"></div>
+			</div>
+			<div class="fs" id="img2-pivot" style="transform-origin: 50% 30% 0px; transform: matrix(1, 0, 0, 1, 0, 0);">
+				<div class="fs" id="img2" style="transform-origin: 50% 30% 0px; transform: matrix(1, 0, 0, 1, 0, 0); visibility: hidden; opacity: 0;"></div>
+			</div>
+			<div class="fs" id="img3-pivot" style="transform-origin: 10% 30% 0px; transform: matrix(1, 0, 0, 1, 0, 0);">
+				<div class="fs" id="img3" style="transform-origin: 10% 30% 0px; visibility: hidden; opacity: 0; transform: matrix(1, 0, 0, 1, 0, 0);"></div>
+			</div>
+			<div class="fs" id="img4-pivot" style="overflow: visible; transform-origin: 90% 20% 0px; transform: matrix(1, 0, 0, 1, 0, 0);">
+				<div class="fs" id="img4" style="overflow: visible; transform-origin: 90% 20% 0px; visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"></div>
+				<div class="fs" id="particles"></div>
+			</div>
+			<div class="fs" id="butterflies-under" style="perspective-origin: 50% 50%; perspective: 5000px;"><div class="butterfly" id="butterfly8" style="opacity: 1; transform-origin: 0px 0px 0px; transform: matrix3d(-0.515354, 0.302781, 0.0522934, 0, -0.303937, -0.517322, 0, 0, 0.0751295, -0.0441401, 0.995976, 0, 635.144, 582.312, -1600, 1); transform-style: preserve-3d; perspective-origin: 0px 0px; perspective: 5000px;">
+					<div class="butterfly butterfly-body" style="transform-style: preserve-3d; perspective-origin: 0px 0px; perspective: 5000px; transform: matrix(1, 0, 0, 1, 6, 0);"></div>
+					<div class="butterfly butterfly-wing-left butterfly-wing" style="transform-style: preserve-3d; perspective-origin: 0px 0px; perspective: 5000px; transform: matrix3d(-0.946575, 0, 0.322484, 0, 0, 1, 0, 0, 0.322484, 0, 0.946575, 0, -6, 0, 0, 1);"></div>
+					<div class="butterfly butterfly-wing-right  butterfly-wing" style="transform-style: preserve-3d; perspective-origin: 0px 0px; perspective: 5000px; transform: matrix3d(0.946575, 0, 0.322484, 0, 0, 1, 0, 0, -0.322484, 0, 0.946575, 0, 6, 0, 0, 1);"></div>
+				</div><div class="butterfly" id="butterfly9" style="opacity: 1; transform-origin: 0px 0px 0px; transform: matrix3d(0.551737, 0.229896, 0.0522934, 0, -0.230774, 0.553844, 0, 0, -0.0804335, -0.0335148, 0.995976, 0, 680.279, -369.253, -2000, 1); transform-style: preserve-3d; perspective-origin: 0px 0px; perspective: 5000px;">
+					<div class="butterfly butterfly-body" style="transform-style: preserve-3d; perspective-origin: 0px 0px; perspective: 5000px; transform: matrix(1, 0, 0, 1, 6, 0);"></div>
+					<div class="butterfly butterfly-wing-left butterfly-wing" style="transform-style: preserve-3d; perspective-origin: 0px 0px; perspective: 5000px; transform: matrix3d(-0.326566, 0, 0.945174, 0, 0, 1, 0, 0, 0.945174, 0, 0.326566, 0, -6, 0, 0, 1);"></div>
+					<div class="butterfly butterfly-wing-right  butterfly-wing" style="transform-style: preserve-3d; perspective-origin: 0px 0px; perspective: 5000px; transform: matrix3d(0.326566, 0, 0.945174, 0, 0, 1, 0, 0, -0.945174, 0, 0.326566, 0, 6, 0, 0, 1);"></div>
+				</div><div class="butterfly" id="butterfly10" style="opacity: 1; transform-origin: 0px 0px 0px; transform: matrix3d(0.0969948, -0.589794, 0.0522934, 0, 0.592047, 0.0973653, 0, 0, -0.0141401, 0.0859816, 0.995976, 0, -516.906, -178.857, -800, 1); transform-style: preserve-3d; perspective-origin: 0px 0px; perspective: 5000px;">
+					<div class="butterfly butterfly-body" style="transform-style: preserve-3d; perspective-origin: 0px 0px; perspective: 5000px; transform: matrix(1, 0, 0, 1, 6, 0);"></div>
+					<div class="butterfly butterfly-wing-left butterfly-wing" style="transform-style: preserve-3d; perspective-origin: 0px 0px; perspective: 5000px; transform: matrix3d(-0.290373, 0, 0.956914, 0, 0, 1, 0, 0, 0.956914, 0, 0.290373, 0, -6, 0, 0, 1);"></div>
+					<div class="butterfly butterfly-wing-right  butterfly-wing" style="transform-style: preserve-3d; perspective-origin: 0px 0px; perspective: 5000px; transform: matrix3d(0.290373, 0, 0.956914, 0, 0, 1, 0, 0, -0.956914, 0, 0.290373, 0, 6, 0, 0, 1);"></div>
+				</div><div class="butterfly" id="butterfly11" style="opacity: 1; transform-origin: 0px 0px 0px; transform: matrix3d(0.0969948, -0.589794, 0.0522934, 0, 0.592047, 0.0973653, 0, 0, -0.0141401, 0.0859816, 0.995976, 0, -616.906, -182.034, -1800, 1); transform-style: preserve-3d; perspective-origin: 0px 0px; perspective: 5000px;">
+					<div class="butterfly butterfly-body" style="transform-style: preserve-3d; perspective-origin: 0px 0px; perspective: 5000px; transform: matrix(1, 0, 0, 1, 6, 0);"></div>
+					<div class="butterfly butterfly-wing-left butterfly-wing" style="transform-style: preserve-3d; perspective-origin: 0px 0px; perspective: 5000px; transform: matrix3d(-0.972856, 0, 0.231411, 0, 0, 1, 0, 0, 0.231411, 0, 0.972856, 0, -6, 0, 0, 1);"></div>
+					<div class="butterfly butterfly-wing-right  butterfly-wing" style="transform-style: preserve-3d; perspective-origin: 0px 0px; perspective: 5000px; transform: matrix3d(0.972856, 0, 0.231411, 0, 0, 1, 0, 0, -0.231411, 0, 0.972856, 0, 6, 0, 0, 1);"></div>
+				</div><div class="butterfly" id="butterfly12" style="opacity: 1; transform-origin: 0px 0px 0px; transform: matrix3d(-0.407429, 0.437341, 0.0522934, 0, -0.439012, -0.408985, 0, 0, 0.0593959, -0.0637566, 0.995976, 0, 535.222, 99.5072, 0, 1); transform-style: preserve-3d; perspective-origin: 0px 0px; perspective: 5000px;">
+					<div class="butterfly butterfly-body" style="transform-style: preserve-3d; perspective-origin: 0px 0px; perspective: 5000px; transform: matrix(1, 0, 0, 1, 6, 0);"></div>
+					<div class="butterfly butterfly-wing-left butterfly-wing" style="transform-style: preserve-3d; perspective-origin: 0px 0px; perspective: 5000px; transform: matrix3d(-0.786313, 0, 0.617828, 0, 0, 1, 0, 0, 0.617828, 0, 0.786313, 0, -6, 0, 0, 1);"></div>
+					<div class="butterfly butterfly-wing-right  butterfly-wing" style="transform-style: preserve-3d; perspective-origin: 0px 0px; perspective: 5000px; transform: matrix3d(0.786313, 0, 0.617828, 0, 0, 1, 0, 0, -0.617828, 0, 0.786313, 0, 6, 0, 0, 1);"></div>
+				</div><div class="butterfly" id="butterfly13" style="opacity: 1; transform-origin: 0px 0px 0px; transform: matrix3d(0.525289, 0.285196, 0.0522934, 0, -0.286285, 0.527296, 0, 0, -0.0765779, -0.0415765, 0.995976, 0, 439.092, -309.313, -100, 1); transform-style: preserve-3d; perspective-origin: 0px 0px; perspective: 5000px;">
+					<div class="butterfly butterfly-body" style="transform-style: preserve-3d; perspective-origin: 0px 0px; perspective: 5000px; transform: matrix(1, 0, 0, 1, 6, 0);"></div>
+					<div class="butterfly butterfly-wing-left butterfly-wing" style="transform-style: preserve-3d; perspective-origin: 0px 0px; perspective: 5000px; transform: matrix3d(-0.616717, 0, -0.787185, 0, 0, 1, 0, 0, -0.787185, 0, 0.616717, 0, -6, 0, 0, 1);"></div>
+					<div class="butterfly butterfly-wing-right  butterfly-wing" style="transform-style: preserve-3d; perspective-origin: 0px 0px; perspective: 5000px; transform: matrix3d(0.616717, 0, -0.787185, 0, 0, 1, 0, 0, 0.787185, 0, 0.616717, 0, 6, 0, 0, 1);"></div>
+				</div><div class="butterfly" id="butterfly14" style="opacity: 1; transform-origin: 0px 0px 0px; transform: matrix3d(0.48978, -0.342608, 0.0522934, 0, 0.343917, 0.491651, 0, 0, -0.0714013, 0.0499463, 0.995976, 0, -11.157, -591.862, -1200, 1); transform-style: preserve-3d; perspective-origin: 0px 0px; perspective: 5000px;">
+					<div class="butterfly butterfly-body" style="transform-style: preserve-3d; perspective-origin: 0px 0px; perspective: 5000px; transform: matrix(1, 0, 0, 1, 6, 0);"></div>
+					<div class="butterfly butterfly-wing-left butterfly-wing" style="transform-style: preserve-3d; perspective-origin: 0px 0px; perspective: 5000px; transform: matrix3d(-0.872853, 0, -0.487983, 0, 0, 1, 0, 0, -0.487983, 0, 0.872853, 0, -6, 0, 0, 1);"></div>
+					<div class="butterfly butterfly-wing-right  butterfly-wing" style="transform-style: preserve-3d; perspective-origin: 0px 0px; perspective: 5000px; transform: matrix3d(0.872853, 0, -0.487983, 0, 0, 1, 0, 0, 0.487983, 0, 0.872853, 0, 6, 0, 0, 1);"></div>
+				</div></div>
+			<div class="fs" id="text-shadow" style="box-shadow: rgb(0, 0, 0) 0px 0px 45px 50px; visibility: inherit; opacity: 0.7; left: 45px; top: 250px; height: 20px; width: 70px;"></div>
+			<div class="fs" id="headline" style="visibility: hidden; opacity: 0; font-size: 22px; left: 10px; top: 102px; height: 315px; width: 140px; line-height: 26px;"><ft-dynamic name="headlineVar">Mostre sua criatividade para o mundo.</ft-dynamic></div>
+			<div class="fs" id="butterflies" style="perspective-origin: 50% 50%; perspective: 5000px;">
+				<div class="butterfly" id="butterfly0" style="opacity: 1; transform-origin: 0px 0px 0px; transform: matrix3d(-0.515354, 0.302781, 0.0522934, 0, -0.303937, -0.517322, 0, 0, 0.075146, -0.0441498, 0.996195, 0, 1370.29, 678.468, -1000, 1); transform-style: preserve-3d; perspective-origin: 0px 0px; perspective: 5000px;">
+					<div class="butterfly butterfly-body" style="transform-style: preserve-3d; perspective-origin: 0px 0px; perspective: 5000px; transform: matrix(1, 0, 0, 1, 6, 0);"></div>
+					<div class="butterfly butterfly-wing-left butterfly-wing" style="transform-style: preserve-3d; perspective-origin: 0px 0px; perspective: 5000px; transform: matrix3d(-0.845565, 0, -0.533873, 0, 0, 1, 0, 0, -0.533873, 0, 0.845565, 0, -6, 0, 0, 1);"></div>
+					<div class="butterfly butterfly-wing-right  butterfly-wing" style="transform-style: preserve-3d; perspective-origin: 0px 0px; perspective: 5000px; transform: matrix3d(0.845565, 0, -0.533873, 0, 0, 1, 0, 0, 0.533873, 0, 0.845565, 0, 6, 0, 0, 1);"></div>
+				</div>
+			<div class="butterfly" id="butterfly1" style="opacity: 1; transform-origin: 0px 0px 0px; transform: matrix3d(0.525289, 0.285196, 0.0522934, 0, -0.286285, 0.527296, 0, 0, -0.0765779, -0.0415765, 0.995976, 0, 1247.73, -1182.79, -100, 1); transform-style: preserve-3d; perspective-origin: 0px 0px; perspective: 5000px;">
+					<div class="butterfly butterfly-body" style="transform-style: preserve-3d; perspective-origin: 0px 0px; perspective: 5000px; transform: matrix(1, 0, 0, 1, 6, 0);"></div>
+					<div class="butterfly butterfly-wing-left butterfly-wing" style="transform-style: preserve-3d; perspective-origin: 0px 0px; perspective: 5000px; transform: matrix3d(-0.594885, 0, 0.803811, 0, 0, 1, 0, 0, 0.803811, 0, 0.594885, 0, -6, 0, 0, 1);"></div>
+					<div class="butterfly butterfly-wing-right  butterfly-wing" style="transform-style: preserve-3d; perspective-origin: 0px 0px; perspective: 5000px; transform: matrix3d(0.594885, 0, 0.803811, 0, 0, 1, 0, 0, -0.803811, 0, 0.594885, 0, 6, 0, 0, 1);"></div>
+				</div><div class="butterfly" id="butterfly2" style="opacity: 1; transform-origin: 0px 0px 0px; transform: matrix3d(0.48978, -0.342608, 0.0522934, 0, 0.343917, 0.491651, 0, 0, -0.0714013, 0.0499463, 0.995976, 0, 206.87, -1058.27, -1200, 1); transform-style: preserve-3d; perspective-origin: 0px 0px; perspective: 5000px;">
+					<div class="butterfly butterfly-body" style="transform-style: preserve-3d; perspective-origin: 0px 0px; perspective: 5000px; transform: matrix(1, 0, 0, 1, 6, 0);"></div>
+					<div class="butterfly butterfly-wing-left butterfly-wing" style="transform-style: preserve-3d; perspective-origin: 0px 0px; perspective: 5000px; transform: matrix3d(-0.999916, 0, 0.0129271, 0, 0, 1, 0, 0, 0.0129271, 0, 0.999916, 0, -6, 0, 0, 1);"></div>
+					<div class="butterfly butterfly-wing-right  butterfly-wing" style="transform-style: preserve-3d; perspective-origin: 0px 0px; perspective: 5000px; transform: matrix3d(0.999916, 0, 0.0129271, 0, 0, 1, 0, 0, -0.0129271, 0, 0.999916, 0, 6, 0, 0, 1);"></div>
+				</div><div class="butterfly" id="butterfly3" style="opacity: 1; transform-origin: 0px 0px 0px; transform: matrix3d(-0.487995, 0.345147, 0.0522934, 0, -0.346465, -0.489859, 0, 0, 0.071141, -0.0503164, 0.995976, 0, 743.491, 47.7735, 0, 1); transform-style: preserve-3d; perspective-origin: 0px 0px; perspective: 5000px;">
+					<div class="butterfly butterfly-body" style="transform-style: preserve-3d; perspective-origin: 0px 0px; perspective: 5000px; transform: matrix(1, 0, 0, 1, 6, 0);"></div>
+					<div class="butterfly butterfly-wing-left butterfly-wing" style="transform-style: preserve-3d; perspective-origin: 0px 0px; perspective: 5000px; transform: matrix3d(-0.875906, 0, 0.482482, 0, 0, 1, 0, 0, 0.482482, 0, 0.875906, 0, -6, 0, 0, 1);"></div>
+					<div class="butterfly butterfly-wing-right  butterfly-wing" style="transform-style: preserve-3d; perspective-origin: 0px 0px; perspective: 5000px; transform: matrix3d(0.875906, 0, 0.482482, 0, 0, 1, 0, 0, -0.482482, 0, 0.875906, 0, 6, 0, 0, 1);"></div>
+				</div><div class="butterfly" id="butterfly4" style="opacity: 1; transform-origin: 0px 0px 0px; transform: matrix3d(0.551737, 0.229896, 0.0522934, 0, -0.230774, 0.553844, 0, 0, -0.0804335, -0.0335148, 0.995976, 0, 1073.71, -855.622, -1000, 1); transform-style: preserve-3d; perspective-origin: 0px 0px; perspective: 5000px;">
+					<div class="butterfly butterfly-body" style="transform-style: preserve-3d; perspective-origin: 0px 0px; perspective: 5000px; transform: matrix(1, 0, 0, 1, 6, 0);"></div>
+					<div class="butterfly butterfly-wing-left butterfly-wing" style="transform-style: preserve-3d; perspective-origin: 0px 0px; perspective: 5000px; transform: matrix3d(-0.18793, 0, 0.982182, 0, 0, 1, 0, 0, 0.982182, 0, 0.18793, 0, -6, 0, 0, 1);"></div>
+					<div class="butterfly butterfly-wing-right  butterfly-wing" style="transform-style: preserve-3d; perspective-origin: 0px 0px; perspective: 5000px; transform: matrix3d(0.18793, 0, 0.982182, 0, 0, 1, 0, 0, -0.982182, 0, 0.18793, 0, 6, 0, 0, 1);"></div>
+				</div><div class="butterfly" id="butterfly5" style="opacity: 1; transform-origin: 0px 0px 0px; transform: matrix3d(-0.407429, 0.437341, 0.0522934, 0, -0.439012, -0.408985, 0, 0, 0.0593959, -0.0637566, 0.995976, 0, 635.222, 39.8775, 0, 1); transform-style: preserve-3d; perspective-origin: 0px 0px; perspective: 5000px;">
+					<div class="butterfly butterfly-body" style="transform-style: preserve-3d; perspective-origin: 0px 0px; perspective: 5000px; transform: matrix(1, 0, 0, 1, 6, 0);"></div>
+					<div class="butterfly butterfly-wing-left butterfly-wing" style="transform-style: preserve-3d; perspective-origin: 0px 0px; perspective: 5000px; transform: matrix3d(-0.173672, 0, -0.984804, 0, 0, 1, 0, 0, -0.984804, 0, 0.173672, 0, -6, 0, 0, 1);"></div>
+					<div class="butterfly butterfly-wing-right  butterfly-wing" style="transform-style: preserve-3d; perspective-origin: 0px 0px; perspective: 5000px; transform: matrix3d(0.173672, 0, -0.984804, 0, 0, 1, 0, 0, 0.984804, 0, 0.173672, 0, 6, 0, 0, 1);"></div>
+				</div><div class="butterfly" id="butterfly6" style="opacity: 1; transform-origin: 0px 0px 0px; transform: matrix3d(0.0969948, -0.589794, 0.0522934, 0, 0.592047, 0.0973653, 0, 0, -0.0141401, 0.0859816, 0.995976, 0, -516.906, -159.814, 800, 1); transform-style: preserve-3d; perspective-origin: 0px 0px; perspective: 5000px;">
+					<div class="butterfly butterfly-body" style="transform-style: preserve-3d; perspective-origin: 0px 0px; perspective: 5000px; transform: matrix(1, 0, 0, 1, 6, 0);"></div>
+					<div class="butterfly butterfly-wing-left butterfly-wing" style="transform-style: preserve-3d; perspective-origin: 0px 0px; perspective: 5000px; transform: matrix3d(-0.394699, 0, 0.91881, 0, 0, 1, 0, 0, 0.91881, 0, 0.394699, 0, -6, 0, 0, 1);"></div>
+					<div class="butterfly butterfly-wing-right  butterfly-wing" style="transform-style: preserve-3d; perspective-origin: 0px 0px; perspective: 5000px; transform: matrix3d(0.394699, 0, 0.91881, 0, 0, 1, 0, 0, -0.91881, 0, 0.394699, 0, 6, 0, 0, 1);"></div>
+				</div><div class="butterfly" id="butterfly7" style="opacity: 1; transform-origin: 0px 0px 0px; transform: matrix3d(0.0969948, 0.589794, 0.0522934, 0, -0.592047, 0.0973653, 0, 0, -0.0141401, -0.0859816, 0.995976, 0, 1254.5, -485.665, 1200, 1); transform-style: preserve-3d; perspective-origin: 0px 0px; perspective: 5000px;">
+					<div class="butterfly butterfly-body" style="transform-style: preserve-3d; perspective-origin: 0px 0px; perspective: 5000px; transform: matrix(1, 0, 0, 1, 6, 0);"></div>
+					<div class="butterfly butterfly-wing-left butterfly-wing" style="transform-style: preserve-3d; perspective-origin: 0px 0px; perspective: 5000px; transform: matrix3d(-0.653263, 0, 0.757131, 0, 0, 1, 0, 0, 0.757131, 0, 0.653263, 0, -6, 0, 0, 1);"></div>
+					<div class="butterfly butterfly-wing-right  butterfly-wing" style="transform-style: preserve-3d; perspective-origin: 0px 0px; perspective: 5000px; transform: matrix3d(0.653263, 0, 0.757131, 0, 0, 1, 0, 0, -0.757131, 0, 0.653263, 0, 6, 0, 0, 1);"></div>
+				</div></div>
+			<div class="fs" id="bottom-bar"></div>
+			<div id="bottom-bar-var" style="left: 15px; width: 130px; line-height: 15px; font-size: 14px; top: 464px;"><ft-dynamic name="bottomVar">Estudantes economizam até <span class="ft-bold">60%</span> na Adobe Creative Cloud.</ft-dynamic></div>
+			<div id="cta" style="bottom: 30px; padding: 8px 16px; border-radius: 15px; font-size: 13px; right: 19px;"><ft-dynamic name="ctaVar">Compre agora</ft-dynamic></div>
+			<div class="fs" id="tagline" style="visibility: inherit; opacity: 1;"></div>
+			<div class="fs" id="logo" style="transform: matrix(1, 0, 0, 1, 0, 0);"></div>
+			<div id="outline"></div>
+		</div>
+	</ft-default>
+		<script src="./TweenMax.min.js.download"></script>
+		<script type="text/javascript">
+//references
+var tw;
+var main = this;
+var bannerContain = document.getElementById("banner");
+var clickCatch = document.getElementById("click-catch");
+//time
+var i;
+var timeFromStart = 0;
+var prevTime = 0;
+var currentTime = 0;
+var deltaTime = 0;
+//state
+var bannerEnd = false;
+//
+//init
+window.onload = function() {
+	//references
+	tw = TweenMax;
+	//reset elements
+	initGFX();
+	//start
+	tw.delayedCall(0.2, begin);
+}
+function begin(){
+	//show banner
+	tw.to(bannerContain, 0.5, {opacity: 1, ease: Quad.easeOut});
+	//time
+	currentTime = tw.ticker.time;
+	if(needsFrameTick){
+		tw.ticker.addEventListener("tick", frameTick, this, true, 1);
+	}
+	//animation sequence
+	tw.delayedCall(15, function(){
+		bannerEnd = true;
+	});
+	doAnimation();
+}
+function frameTick(event){
+	//time
+	prevTime = currentTime;
+	currentTime = tw.ticker.time;
+	deltaTime = (currentTime - prevTime);
+	timeFromStart += deltaTime;
+	doFrameTick();
+}
+function print(obj){
+	console.log(obj);
+}
+
+//state
+var defaultForce3D = true;
+var needsFrameTick = true;
+
+//references
+var img1 = document.getElementById("img1");
+var img2 = document.getElementById("img2");
+var img3 = document.getElementById("img3");
+var img4 = document.getElementById("img4");
+var imgPivot1 = document.getElementById("img1-pivot");
+var imgPivot2 = document.getElementById("img2-pivot");
+var imgPivot3 = document.getElementById("img3-pivot");
+var imgPivot4 = document.getElementById("img4-pivot");
+var bottombar = document.getElementById("bottom-bar");
+var headline = document.getElementById("headline");
+var tagline = document.getElementById("tagline");
+var logo = document.getElementById("logo");
+var textShadow = document.getElementById("text-shadow");
+var butterfliesElem = document.getElementById("butterflies");
+var butterfliesUnderElem = document.getElementById("butterflies-under");
+var butterflyMaster = document.getElementsByClassName("butterfly")[0];
+var cta = document.getElementById("cta");
+var bottomBarVar = document.getElementById("bottom-bar-var");
+
+
+var ctaRightBorder = 15;
+var bottomVarBorder = 10;
+var dynamicSet = false;
+
+
+//
+//size data
+var masterSizeData = {
+	size300x250: {
+		img1: {to: "85% 46%"},
+		img2: {to: "60% 60%"},
+		img3: {to: "0% 4%"},
+		img4: {to: "90% 25%"},
+		spawnPoint: {x: sw/2, y: sh/2},
+		img3EndSc: 1.1,
+		headlinePos: {fontSize: 15},
+		butterflyScale: 0.6,
+		butterflySpeedMult: 1,
+		butterflyData: [
+			{x: -100, y: 220, z: -1000, theta: 1, speed: 12, turnSpeed: 0.4},
+			{x: -100, y: 330, z: -100, theta: 0.9, speed: 15, turnSpeed: -0.1},
+			{x: -100, y: 450, z: -1200, theta: 1, speed: 13, turnSpeed: -0.4},
+			{x: sw + 200, y: sh + 100, z: 0, theta: -1.5, speed: 12, turnSpeed: 1},
+
+			{x: -100, y: 300, z: -1000, theta: 1.2, speed: 12, turnSpeed: -0.2},
+			{x: 230, y: sh + 100, z: 0, theta: -0.9, speed: 7, turnSpeed: 0.8},
+			{x: 250, y: sh + 100, z: 800, theta: -0.2, speed: 8, turnSpeed: -0.3},
+			{x: 200, y: sh + 100, z: 1200, theta: 0.2, speed: 11, turnSpeed: 0.3},
+
+			{x: -100, y: 300, z: -1600, theta: 1, speed: 6, turnSpeed: 0.4, elem: butterfliesUnderElem},
+			{x: -200, y: 300, z: -2000, theta: 1.2, speed: 9, turnSpeed: -0.2, elem: butterfliesUnderElem},
+			{x: 250, y: sh + 100, z: -800, theta: -0.2, speed: 8, turnSpeed: -0.3, elem: butterfliesUnderElem},
+			{x: 150, y: sh + 100, z: -1800, theta: -0.2, speed: 8, turnSpeed: -0.3, elem: butterfliesUnderElem},
+			{x: 130, y: sh + 100, z: 0, theta: -0.9, speed: 7, turnSpeed: 0.8, elem: butterfliesUnderElem},
+			{x: -100, y: 330, z: -100, theta: 0.9, speed: 6, turnSpeed: -0.1, elem: butterfliesUnderElem},
+			{x: -200, y: 400, z: -1200, theta: 1, speed: 8, turnSpeed: -0.4, elem: butterfliesUnderElem},
+		]
+	},
+	size160x600: {
+		img1: {to: "50% 30%"},
+		img2: {to: "50% 30%"},
+		img3: {to: "10% 30%"},
+		img4: {to: "90% 20%"},
+		spawnPoint: {x: 100, y: 250},
+		img3EndSc: 1.02,
+		headlinePos: {fontSize: 22},
+		butterflyScale: 0.6,
+		butterflySpeedMult: 1,
+		butterflyData: [
+			{x: -100, y: 320, z: -1000, theta: 1, speed: 12, turnSpeed: 0.4},
+			{x: -100, y: 430, z: -100, theta: 0.9, speed: 15, turnSpeed: -0.1},
+			{x: -100, y: 550, z: -1200, theta: 1, speed: 13, turnSpeed: -0.4},
+			{x: sw + 200, y: sh + 100, z: 0, theta: -1.5, speed: 12, turnSpeed: 1},
+
+			{x: -100, y: 300, z: -1000, theta: 1.2, speed: 12, turnSpeed: -0.2},
+			{x: 230, y: sh - 100, z: 0, theta: -0.9, speed: 7, turnSpeed: 0.8},
+			{x: 250, y: sh - 30, z: 800, theta: -0.2, speed: 8, turnSpeed: -0.3},
+			{x: 200, y: sh - 80, z: 1200, theta: 0.2, speed: 11, turnSpeed: 0.3},
+
+			{x: -100, y: 400, z: -1600, theta: 1, speed: 6, turnSpeed: 0.4, elem: butterfliesUnderElem},
+			{x: -200, y: 500, z: -2000, theta: 1.2, speed: 9, turnSpeed: -0.2, elem: butterfliesUnderElem},
+			{x: 250, y: sh - 50, z: -800, theta: -0.2, speed: 8, turnSpeed: -0.3, elem: butterfliesUnderElem},
+			{x: 150, y: sh - 50, z: -1800, theta: -0.2, speed: 8, turnSpeed: -0.3, elem: butterfliesUnderElem},
+			{x: 130, y: sh - 50, z: 0, theta: -0.9, speed: 7, turnSpeed: 0.8, elem: butterfliesUnderElem},
+			{x: -100, y: 330, z: -100, theta: 0.9, speed: 6, turnSpeed: -0.1, elem: butterfliesUnderElem},
+			{x: -200, y: 400, z: -1200, theta: 1, speed: 8, turnSpeed: -0.4, elem: butterfliesUnderElem},
+		]
+	},
+	size300x600: {
+		img1: {to: "50% 30%"},
+		img2: {to: "50% 40%"},
+		img3: {to: "20% 60%"},
+		img4: {to: "90% 20%"},
+		spawnPoint: {x: 146, y: 310},
+		img3EndSc: 1.01,
+		headlinePos: {fontSize: 36},
+		butterflyScale: 0.8,
+		butterflySpeedMult: 1.15,
+		butterflyData: [
+			{x: -120, y: 400, z: -1000, theta: 1, speed: 12, turnSpeed: 0.4},
+			{x: -120, y: 490, z: -100, theta: 0.9, speed: 15, turnSpeed: -0.1},
+			{x: -120, y: 610, z: -1200, theta: 1, speed: 13, turnSpeed: -0.4},
+			{x: sw + 200, y: sh + 100, z: 0, theta: -1.5, speed: 12, turnSpeed: 1},
+
+			{x: -120, y: 300, z: -1000, theta: 1.2, speed: 12, turnSpeed: -0.2},
+			{x: 230, y: sh + 120, z: 0, theta: -0.9, speed: 7, turnSpeed: 0.8},
+			{x: 250, y: sh + 30, z: 800, theta: -0.2, speed: 8, turnSpeed: -0.3},
+			{x: 200, y: sh + 80, z: 1200, theta: 0.2, speed: 11, turnSpeed: 0.3},
+
+			{x: -120, y: 400, z: -1600, theta: 1, speed: 7, turnSpeed: 0.4, elem: butterfliesUnderElem},
+			{x: -220, y: 500, z: -2000, theta: 1.2, speed: 9, turnSpeed: -0.2, elem: butterfliesUnderElem},
+			{x: 250, y: sh + 150, z: -800, theta: -0.2, speed: 8, turnSpeed: -0.3, elem: butterfliesUnderElem},
+			{x: 150, y: sh + 150, z: -1800, theta: -0.2, speed: 8, turnSpeed: -0.3, elem: butterfliesUnderElem},
+			{x: 130, y: sh + 150, z: 0, theta: -0.9, speed: 7, turnSpeed: 0.8, elem: butterfliesUnderElem},
+			{x: -120, y: 330, z: -100, theta: 0.9, speed: 8, turnSpeed: -0.1, elem: butterfliesUnderElem},
+			{x: -220, y: 400, z: -1200, theta: 1, speed: 8, turnSpeed: -0.4, elem: butterfliesUnderElem},
+		]
+	},
+	size728x90: {
+		img1: {to: "301px 83px"},
+		img2: {to: "154px 45px"},
+		img3: {to: "21px 32px"},
+		img4: {to: "145px 49px"},
+		spawnPoint: {x: 201, y: 82},
+		img3EndSc: 1.02,
+		headlinePos: {fontSize: 18},
+		butterflyScale: 0.5,
+		butterflySpeedMult: 1,
+		butterflyData: [
+			{x: -120, y: 230, z: -1000, theta: 1, speed: 12, turnSpeed: 0.4},
+			{x: -120, y: 260, z: -100, theta: 0.9, speed: 15, turnSpeed: -0.1},
+			{x: -120, y: 280, z: -1200, theta: 1, speed: 13, turnSpeed: -0.4},
+			{x: 420, y: 45, z: 0, theta: -1.5, speed: 12, turnSpeed: 1},
+
+			{x: -120, y: 300, z: -1000, theta: 1.2, speed: 12, turnSpeed: -0.2},
+			{x: 230, y: sh + 120, z: 0, theta: -0.9, speed: 7, turnSpeed: 0.8},
+			{x: 250, y: sh + 40, z: 800, theta: -0.2, speed: 8, turnSpeed: -0.3},
+			{x: 200, y: sh + 80, z: 1200, theta: 0.2, speed: 11, turnSpeed: 0.3},
+
+			{x: -120, y: 400, z: -1600, theta: 1, speed: 7, turnSpeed: 0.4, elem: butterfliesUnderElem},
+			{x: -220, y: 500, z: -2000, theta: 1.2, speed: 9, turnSpeed: -0.2, elem: butterfliesUnderElem},
+			{x: 250, y: sh + 150, z: -800, theta: -0.2, speed: 8, turnSpeed: -0.3, elem: butterfliesUnderElem},
+			{x: 150, y: sh + 150, z: -1800, theta: -0.2, speed: 8, turnSpeed: -0.3, elem: butterfliesUnderElem},
+			{x: 130, y: sh + 150, z: 0, theta: -0.9, speed: 7, turnSpeed: 0.8, elem: butterfliesUnderElem},
+			{x: -120, y: 230, z: -100, theta: 0.9, speed: 8, turnSpeed: -0.1, elem: butterfliesUnderElem},
+			{x: -220, y: 200, z: -1200, theta: 1, speed: 8, turnSpeed: -0.4, elem: butterfliesUnderElem},
+		]	},
+};
+var sizeData = masterSizeData["size"+sizeType];
+
+function randomRange (min, max) {
+  return min + Math.random() * (max - min);
+}
+
+function lerp (a, b, t) {
+  return (1 - t) * a + t * b;
+}
+
+
+var numButterflies = 4;
+var butterflies = [];
+
+//init elements
+var butterfly;
+function initGFX(){
+
+	tw.set(headline, {autoAlpha: 0});
+	tw.set(tagline, {autoAlpha: 0});
+	tw.set(img1, {transformOrigin: sizeData.img1.to});
+	tw.set(imgPivot1, {transformOrigin: sizeData.img1.to});
+	tw.set(img2, {transformOrigin: sizeData.img2.to});
+	tw.set(imgPivot2, {transformOrigin: sizeData.img2.to});
+	tw.set(imgPivot3, {rotation: 0, transformOrigin: sizeData.img3.to});
+	tw.set(img2, {autoAlpha: 0});
+	tw.set(img3, {autoAlpha: 0, transformOrigin: sizeData.img3.to});
+	tw.set(img4, {autoAlpha: 0, transformOrigin: sizeData.img4.to, overflow: "visible", scale: 1.1});
+	var img4StartScale = 1.5;
+	if(sizeType == "300x600"){
+		img4StartScale = 1;
+	}
+	if(sizeType == "160x600"){
+		img4StartScale = 1;
+	}
+	tw.set(imgPivot4, {transformOrigin: sizeData.img4.to, overflow: "visible", scale: img4StartScale});
+
+	var left, height, width, top;
+	width = sw;
+	height = sh;
+	left = 0;
+	top = 0;
+	if(sizeType == "160x600"){
+		width = 140;
+		height = 315;
+		top = 102;
+		left = (sw - width) / 2;
+	}
+	if(sizeType == "300x600"){
+		width = 220;
+		height = 420;
+		left = (sw - width) / 2;
+		top = 90;
+	}
+	if(sizeType == "728x90"){
+		width = 218;
+		height = 90;
+		top = 0;
+		left = 90;
+	}
+	if(sizeType == "300x250"){
+		width = 290;
+		height = 118;
+		top = 54;
+		left = (sw - width) / 2;
+	}
+	tw.set(headline, {width: width, height: height, top: top, left: left, fontSize: sizeData.headlinePos.fontSize + "px"});
+	if(sizeType == "160x600"){
+		tw.set(headline, {lineHeight: (sizeData.headlinePos.fontSize + 4) + "px"});
+	}
+	tw.set(textShadow, {width: width - width/2, height: height/16, top: top + height/2 - height/32, left: left + width/4, autoAlpha: 0, boxShadow: "0px 0px 45px 50px #000"});
+
+	//buttefflies
+	var i, butterfly, x, y, scale, p, theta, bd;
+
+	for(i = 0; i < sizeData.butterflyData.length; i++){
+		bd = sizeData.butterflyData[i];
+		p = i / (sizeData.butterflyData.length - 1);
+		if(i == 0){
+			butterfly = butterflyMaster;
+			butterfly.id = "butterfly" + i;
+		} else {
+			butterfly = butterflyMaster.cloneNode(true);
+			butterfly.id = "butterfly" + i;
+			if(bd.elem !== undefined){
+				bd.elem.appendChild(butterfly);
+			} else {
+				butterfliesElem.appendChild(butterfly);
+			}
+		}
+		x = bd.x;
+		y = bd.y;
+		z = bd.z;
+		theta = bd.theta;
+		tw.set(butterfly, {x: x, y: y, z: z, scale: sizeData.butterflyScale, alpha: 1, transformOrigin: "0 0", rotationY: -5, rotationZ: (theta * 180) / Math.PI});
+		butterflies.push({butterfly: butterfly, active: false, x: x, y: y, theta: theta, life: 0, tick: Math.random() * Math.PI * 2, speed: bd.speed, turnSpeed: bd.turnSpeed});
+	}
+	tw.set("#butterflies", {perspective: "5000px", perspectiveOrigin: "50% 50%"});
+	tw.set("#butterflies-under", {perspective: "5000px", perspectiveOrigin: "50% 50%"});
+	tw.set(".butterfly", {perspective: "5000px", perspectiveOrigin: "0 0", transformStyle: "preserve-3d"});
+	tw.set(".butterfly-body", {x: 6, transformStyle: "preserve-3d"});
+	tw.set(".butterfly-wing-right", {x: 6, transformStyle: "preserve-3d"});
+	tw.set(".butterfly-wing-left", {scaleX: -1, x: -6, transformStyle: "preserve-3d"});
+
+	//cta
+	if(myFT.instantAdsLoaded){
+		setDynamic();
+	}
+}
+
+
+function setDynamic(){
+	dynamicSet = true;
+	if(sizeType == "300x250"){
+		tw.set(cta, {fontSize: "11px", borderRadius: 15, padding: "7px 13px 7px 13px", bottom: 20, right: ctaRightBorder});
+		tw.set(bottomBarVar, {fontSize: "12px", lineHeight: "14px", width: sw - cta.offsetWidth - ctaRightBorder - ctaRightBorder * 2, left: ctaRightBorder});
+		tw.set(bottomBarVar, {top: 1 + (sh - 136/4) - bottomBarVar.offsetHeight/2});
+	}
+	if(sizeType == "160x600"){
+		tw.set(cta, {fontSize: "13px", borderRadius: 15, padding: "8px 16px 8px", bottom: 30});
+		tw.set(cta, {right: -1 + sw / 2 - cta.offsetWidth/2});
+		tw.set(bottomBarVar, {fontSize: "14px", lineHeight: "15px", width: sw - 30, left: 15});
+		tw.set(bottomBarVar, {top: (sh - 106) - bottomBarVar.offsetHeight/2});
+	}
+	if(sizeType == "300x600"){
+		tw.set(cta, {fontSize: "13px", borderRadius: 15, padding: "7px 18px 7px", bottom: 31});
+		tw.set(cta, {right: -1 + sw / 2 - cta.offsetWidth/2});
+		tw.set(bottomBarVar, {fontSize: "14px", lineHeight: "17px", width: sw - 30, left: 15});
+		tw.set(bottomBarVar, {top: (sh - 106) - bottomBarVar.offsetHeight/2});
+	}
+	if(sizeType == "728x90"){
+		tw.set(cta, {fontSize: "14px", borderRadius: 24, padding: "8px 18px 8px", bottom: 28});
+		tw.set(cta, {right: 20});
+		tw.set(bottomBarVar, {fontSize: "15px", lineHeight: "17px", width: (sw - 330) - cta.offsetWidth - 60});
+		tw.set(bottomBarVar, {left: 350, top: 1 + sh/2 - bottomBarVar.offsetHeight/2});
+	}
+	print("dynamicSet");
+}
+
+//frame tick 
+function doFrameTick(){
+
+	if(myFT.instantAdsLoaded && !dynamicSet){
+		setDynamic();
+	}
+
+	var wingRange = 80;
+	var i, butterfly, wingLeft, wingRight, butterflyElem;
+	for(i = 0; i < sizeData.butterflyData.length; i++){
+		butterfly = butterflies[i];
+		if(!butterfly.active || butterfly.life > 4){
+			continue;
+		}
+		butterflyElem = butterfly.butterfly;
+		wingLeft = butterflyElem.getElementsByClassName("butterfly-wing-left")[0];
+		wingRight = butterflyElem.getElementsByClassName("butterfly-wing-right")[0];
+		butterfly.tick += deltaTime * butterfly.speed * sizeData.butterflySpeedMult;
+		butterfly.life += deltaTime;
+		butterfly.theta += deltaTime * butterfly.turnSpeed;
+		tw.set(wingLeft, {rotationY: Math.sin(butterfly.tick) * wingRange});
+		tw.set(wingRight, {rotationY: -Math.sin(butterfly.tick) * wingRange});
+		butterfly.x += Math.cos(butterfly.theta - Math.PI / 2) * deltaTime * butterfly.speed * 35;
+		butterfly.y += Math.sin(butterfly.theta - Math.PI / 2) * deltaTime * butterfly.speed * 35 + Math.sin(butterfly.tick * 1) * 1;
+		tw.set(butterflyElem, {x: butterfly.x, y: butterfly.y, rotationZ: (butterfly.theta * 180) / Math.PI});
+	}
+
+}
+
+
+//animation
+function doAnimation(){
+
+	var d = 0.1;
+	var frameDelay = 1;
+	var img4InDur = 0.15;
+
+	tw.to(logo, 0.5, {y: 0});
+
+	if(sizeType != "300x600" && sizeType != "160x600"){
+
+		tw.to(img1, 4, {scale: 1.1, ease: Linear.easeNone, delay: d});
+
+		d += frameDelay;
+
+		tw.to(imgPivot1, 0.2, {scale: 1.8, x: sizeData.img1.destX, y: sizeData.img1.destY, ease: Power3.easeIn, delay: d});
+		d += 0.1;
+		tw.to(img2, 0.15, {autoAlpha: 1, ease: Power2.easeOut, delay: d});
+
+		tw.to(img2, 3, {scale: 1.25, ease: Linear.easeNone, delay: d});
+
+		d += frameDelay;
+
+		tw.to(imgPivot2, 0.2, {scale: 1.8, ease: Power3.easeIn, delay: d});
+		d += 0.1;
+		tw.to(img3, 0.15, {autoAlpha: 1, ease: Power2.easeOut, delay: d});
+
+		tw.to(img3, 3, {scale: 1.3, ease: Linear.easeNone, delay: d});
+
+		d += frameDelay;
+
+		tw.to(imgPivot3, 0.2, {scale: 1.8, ease: Power3.easeIn, delay: d});
+		d += 0.1;
+	} else {
+		img4InDur = 2;
+	}
+
+
+	tw.to(img4, 0.2, {autoAlpha: 1, ease: Power2.easeOut, delay: d});
+
+	var img4Ease = Linear.easeNone;
+	if(sizeType == "300x600" || sizeType == "160x600"){
+		img4Ease = Quad.easeOut;
+		tw.to(img4, img4InDur, {scale: 1, ease: img4Ease, delay: d});
+	} else {
+		tw.to(img4, frameDelay + 0.1, {scale: 1, ease: img4Ease, delay: d});
+	}
+
+	if(sizeType != "300x600" && sizeType != "160x600"){
+		d += frameDelay;
+	} else {
+		d += 0.8;
+	}
+
+	tw.to(imgPivot4, 0.1, {scale: 1, ease: Power2.easeInOut, delay: d});
+
+	d -= 0.1;
+
+	tw.delayedCall(d, function(main){
+		main.butterflies[0].active = true;
+	}, [main]);
+	tw.delayedCall(d + 0.2, function(main){
+		main.butterflies[1].active = true;
+	}, [main]);
+	tw.delayedCall(d + 0, function(main){
+		main.butterflies[3].active = true;
+	}, [main]);
+	tw.delayedCall(d + 0.1, function(main){
+		main.butterflies[2].active = true;
+	}, [main]);
+
+
+	d += 0.7;
+
+	tw.delayedCall(d, function(main){
+		main.butterflies[8].active = true;
+	}, [main]);
+	tw.delayedCall(d + 0.1, function(main){
+		main.butterflies[9].active = true;
+	}, [main]);
+	tw.delayedCall(d + 0.3, function(main){
+		main.butterflies[10].active = true;
+	}, [main]);
+	tw.delayedCall(d + 0, function(main){
+		main.butterflies[11].active = true;
+	}, [main]);
+	tw.delayedCall(d + 0.5, function(main){
+		main.butterflies[12].active = true;
+	}, [main]);
+	tw.delayedCall(d + 0.7, function(main){
+		main.butterflies[13].active = true;
+	}, [main]);
+	tw.delayedCall(d + 1, function(main){
+		main.butterflies[14].active = true;
+	}, [main]);
+
+	tw.to(textShadow, 0.6, {autoAlpha: 0.5, ease: Power2.easeOut, delay: d});
+	tw.to(headline, 0.6, {autoAlpha: 1, ease: Power2.easeOut, delay: d});
+	d += 0.6;
+
+	d += 1;
+
+	tw.delayedCall(d, function(main){
+		main.butterflies[4].active = true;
+	}, [main]);
+	tw.delayedCall(d, function(main){
+		main.butterflies[5].active = true;
+	}, [main]);
+	tw.delayedCall(d + 0.2, function(main){
+		main.butterflies[6].active = true;
+	}, [main]);
+	tw.delayedCall(d + 0.4, function(main){
+		main.butterflies[7].active = true;
+	}, [main]);
+
+	d += 0.8;
+
+	tw.to(headline, 0.4, {autoAlpha: 0, ease: Power2.easeIn, delay: d});
+	d += 0.4;
+	tw.to(textShadow, 0.4, {autoAlpha: 0.7, ease: Power2.easeInOut, delay: d});
+	tw.to(tagline, 0.4, {autoAlpha: 1, ease: Power2.easeOut, delay: d});
+	d += 0.4;
+
+
+}
+		</script>
+		<script src="./html5API.js.download"></script>
+	
+</body></html>

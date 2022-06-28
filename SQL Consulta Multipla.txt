@@ -1,0 +1,14 @@
+SELECT cliente.cpf, cliente_juridico.cnpj FROM cliente, cliente_juridico 
+
+
+
+		SELECT `id`,`nome`,`email1`,`cpf` FROM cliente WHERE upper(nome) like '%$para%' AND `id_usuario` = '$id' AND `cpf` != '' 
+		union all 
+		SELECT `id`,`nomeFantasia`,`email`,`cnpj` FROM cliente_juridico WHERE upper(nomeFantasia) like '%$para%' AND `id_usuario` = '$id' AND `cnpj` != ''  
+		 limit 0,7
+
+
+
+
+
+

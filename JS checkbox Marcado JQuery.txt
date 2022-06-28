@@ -1,0 +1,14 @@
+
+
+$('#myCheckBox').is(':checked');
+
+function marcardesmarcar(){
+  $('.marcar').each(
+         function(){
+           if ($(".marcar").prop( "checked")) 
+           $(this).attr("checked", false);
+           else $(this).attr("checked", true);               
+         }
+    );
+}
+

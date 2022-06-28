@@ -1,0 +1,11 @@
+
+/* LI */
+
+    li , a:link, a:visited{ list-style-type: none; padding:10px; transition:0.5s; cursor:pointer; position:relative; color: #000; }
+    li:hover{ background-color: #ccc;}
+
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    }

@@ -1,0 +1,27 @@
+/// *** ENVIA EMAIL AO CLIENTE ( COMPRA FINALIZADA AGUARDANDO RESPOSTA DE PAGAMENTO )
+	$nomeEmpresa = $us['nomeFantasia'];
+	$destinatario = $email;
+	$nomeCliente = $nome;
+	$ass = "Compra realizada ".$nomeEmpresa;
+	$texto = "
+		<p>&nbsp;</p>
+		<img src='https://www.deolhonalojinha.com.br/imgEmail/ecommerce-recebemos-sua-compra.png' />
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>Aguardando confirma&ccedil;&atilde;o de pagamento</p>
+		<p>N&uacute;mero do pedido: ".$idVenda."</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>E-mail enviado pelo sistema <strong>N&Atilde;O</strong> responda.</p>
+		<img src='https://www.deolhonalojinha.com.br/imgEmail/rodape.png' />
+
+	";
+	
+	$resposta = enviaEmailCliente($nomeEmpresa,$destinatario,$nomeCliente,$ass,$texto);
+	if($resposta == 1){
+		$emailEnviado = 1;
+	}else{	
+		$emailEnviado = 0;
+	}
+	

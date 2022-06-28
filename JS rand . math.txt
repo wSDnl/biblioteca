@@ -1,0 +1,15 @@
+function vendaTemp(){
+
+	var length           = 30;
+	var result           = '';
+	var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%&*+-=_.';
+	var charactersLength = characters.length;
+	for ( var i = 0; i < length; i++ ){
+	  result += characters.charAt(Math.floor(Math.random() * charactersLength));
+	}
+
+	document.getElementById('txtVendaTemp').value = result;
+	$('#JSONIdVendaTemp').empty();
+	$('#JSONIdVendaTemp').append("<strong>"+result+"</strong>");
+	
+}

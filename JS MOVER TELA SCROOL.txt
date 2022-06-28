@@ -1,0 +1,9 @@
+function moveTelaCidade(){
+  document.body.scrollTop = 1300;
+  document.documentElement.scrollTop = 1300;	
+}
+
+
+
+<fieldset class="fieldsetCadastros campoObrigatorio">
+<legend>xxxxxxx</legend>             

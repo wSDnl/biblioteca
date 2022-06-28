@@ -1,0 +1,9 @@
+SELECT sum( cast( replace(valor,',','.') as decimal(18,2)) ) FROM venda_produtos where id_usuario = '$id' and id_produto = '$idProduto' and ano = '$ano'
+
+$sqlBuscaQtd = mysql_query("  SELECT sum( cast( replace(valor,',','.') as decimal(18,2)) ) FROM venda_produtos where id_usuario = '$id' and id_produto = '$idProduto' and ano = '$ano'  ");
+$res2 = mysql_fetch_assoc($sqlBuscaQtd);
+
+<?php echo number_format($res2["sum( cast( replace(valor,',','.') as decimal(18,2)) )"],2,',','.')?>
+
+
+

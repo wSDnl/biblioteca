@@ -1,0 +1,8 @@
+ var screenWidth = screen.width;
+ var screenHeight = screen.height;
+
+
+$(window).height();   // altura do browser
+$(document).height(); // altura do documento HTML
+$(window).width();   // comprimento do browser
+$(document).width(); // comprimento do documento HTML

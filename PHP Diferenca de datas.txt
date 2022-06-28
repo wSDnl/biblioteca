@@ -1,0 +1,4 @@
+		$data_inicial = new DateTime($a['data_inicio']); 
+		$data_final   = new DateTime($a['data_termino']); 
+		$diferenca    = $data_inicial->diff( $data_final ); 
+		$diferenca    = $diferenca->format('%d');

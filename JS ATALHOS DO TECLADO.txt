@@ -1,0 +1,52 @@
+$(document).on('keyup', function(e){
+    var keyCode = e.keyCode || e.which;
+            if (keyCode === 13){ 
+                alert("");
+            }
+});
+
+
+<!-- ATALHOS DO TECLADO -->
+	$(document).on('keyup', function(e) {
+	  var keyCode = e.keyCode || e.which;
+	  
+				///*************** ///// tab
+				if (keyCode === 9){ }
+
+				///*************** ///// ENTER
+				if (keyCode === 13){ }
+
+				///*************** ///// shift
+				if (keyCode === 16){ }
+				
+				/// *************** ///// ctrl
+				if (keyCode === 17){ }								
+				
+				///*************** ///// UP
+				if (keyCode === 38){ }
+				
+				// right arrow 	39
+				if (keyCode === 39){ }
+				
+				///*************** ///// DOWN
+				if (keyCode === 40){ }
+		
+				
+				///*************** /////f1 	  112
+				if (keyCode === 112){ }
+				
+				///*************** /////f2 	  113
+				if (keyCode === 113){ }
+				
+				///*************** ///// F4
+				if (keyCode === 115){ }
+				
+				///*************** /////f8 	  119
+				if (keyCode === 119){ }
+				
+				///*************** /////f9 	  120
+				if (keyCode === 120){ }
+)};
+				
+				
+					

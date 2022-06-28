@@ -1,0 +1,11 @@
+<div dir="aviso" style="position:absolute; top:20px; left:20%; width:100%">
+<table width="50%" height="255" border="0" cellpadding="5" cellspacing="5" style="border:1px solid #999999; -webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.3);-moz-box-shadow:9px 7px 5px rgba(50, 50, 50, 0.3);box-shadow:9px 7px 5px rgba(50, 50, 50, 0.3);">
+  <tr>
+    <td style="padding:20px; color:#FFFFFF; background-color:#006600">Envio de senha por e-mail</td>
+  </tr>
+  <tr>
+    <td height="154" style="background-color:rgba(248,248,255,1);"><p class="Estilo14 Estilo1"><strong>Sucesso :)</strong></p>
+      <p class="Estilo14">Enviamos um e-mail para o seu novo usu&aacute;rio com a senha. </p></td>
+  </tr>
+</table>
+</div>

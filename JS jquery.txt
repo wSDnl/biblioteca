@@ -1,0 +1,49 @@
+<?php
+
+date_default_timezone_set('America/Sao_Paulo');
+
+session_start();
+include("../../function/conexao.php");
+conexao();
+
+$id = $_SESSION['id'];
+
+
+
+
+
+
+<!-- JQUERY -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+
+
+
+$(document).ready( function Msglida(){
+
+	var id = $('#inputId').val();
+	
+	$.ajax({
+        url: "php/verMsg.php",
+        type: 'POST',
+	data: { jid : id},
+        dataType: 'json',
+
+        success: function (retorno) {
+        },
+		
+        complete: function (retorno) {
+		console.log(retorno);
+	},
+
+        error: function (retorno) {
+		console.log(retorno);
+	},
+
+    });
+
+
+
+});
+

@@ -1,0 +1,13 @@
+  $( "div" ).each(function( index, element ) {
+    // element == this
+    $( element ).css( "backgroundColor", "yellow" );
+    if ( $( this ).is( "#stop" ) ) {
+      $( "span" ).text( "Stopped at div index #" + index );
+      return false;
+    }
+  });
+
+
+            $.each(agenda, function( index, value ) {
+                var length = retorno.responseJSON.agenda[0][0].length;
+            });

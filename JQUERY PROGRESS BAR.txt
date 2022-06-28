@@ -1,0 +1,29 @@
+// BARRA DE PROGRASSO
+var matriz = matriz_efetivo.split("-");
+var len    = parseInt( matriz.length );
+var progress = parseInt( 100/len );
+var progressMostra = 0;
+var i = 0;
+			
+	$(matriz).each( function( index , element){
+		progressMostra = progressMostra + progress;
+		i++;
+		console.log("index: "+index+" element: "+element+" Tot: "+len+" progress: "+progressMostra+" i"+i);	
+						
+		if(element != ''){
+			$('#respostaJSON').empty();
+			$('#respostaJSON').css({ display:"block" });
+			$('#respostaJSON').append("<center><div class='loader'></div><br>Enviando E-mail<br>");
+			$('#respostaJSON').append("<progress value="+progressMostra+" max='100'></progress> "+progressMostra+"%</center>");
+		}
+		
+		if(i == len){
+			alert("fim");
+		}
+						
+	});
+										
+
+
+
+

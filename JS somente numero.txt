@@ -1,0 +1,5 @@
+onKeyPress="mascara(this, '##/##/####');return SomenteNumero(event)"
+
+
+onKeyDown="FormataMoeda(this,10,event)" onKeyPress="return maskKeyPress(event)"
+
