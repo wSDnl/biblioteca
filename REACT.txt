@@ -1,0 +1,20 @@
+INICIAR NOVO PROJETO
+npx react-native init [nome projeto]
+
+RUN ANDROID
+npx react-native run-android
+
+EXPO
+npm install -g expo-cli
+
+
+/// *** VIA EXPO
+
+
+INICAR PROJETO EXPO
+expo init [ nome projeto ] 
+SELECIONAR BLANC
+
+QRCODEex
+expo start;
+opção w web
