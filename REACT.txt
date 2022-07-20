@@ -10,7 +10,6 @@ npm install -g expo-cli
 
 /// *** VIA EXPO
 
-
 INICAR PROJETO EXPO
 expo init [ nome projeto ] 
 SELECIONAR BLANC
