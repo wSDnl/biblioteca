@@ -18,5 +18,3 @@ QRCODEex
 expo start;
 opção w web
 
-
-teste de update

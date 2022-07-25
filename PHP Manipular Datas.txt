@@ -1,3 +1,4 @@
+
 $hoje = date("Y-m-d");
 $validade = $linha['validade'];
 $amanha = date('Y-m-d', strtotime("+1 days", strtotime($hoje)));
