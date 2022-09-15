@@ -1,0 +1,27 @@
+estados = new Array();
+
+    $.ajax(settings).done(function (response) {
+        $(response).each(function (i, e) {
+
+            estados[i] = response[i].nome;
+            //select.options[select.options.length] = new Option( response[i].nome , response[i].nome );
+        })
+    });
+
+
+
+
+
+
+
+
+let estados = new Array();
+
+    $.ajax(settings).done(function (response) {
+        $(response).each(function (i, e) {
+            //estados.push( response[i].nome );
+            select.options[select.options.length] = new Option( response[i].nome , response[i].nome );
+        })
+    });
+
+    console.log(estados)

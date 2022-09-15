@@ -1,0 +1,21 @@
+        /// *** CONSULTA DE UFs
+        var settings = {
+            "url": "https://servicodados.ibge.gov.br/api/v1/localidades/estados?orderBy=nome",
+            "method": "GET",
+            "timeout": 0,
+        };
+
+        $.ajax(settings).done(function (response) {
+
+                var select = "<select class='form-control' onchange='carregaCidadesPorUFs(this.value)'><option>" + NaturalidadeUfPm + "</option>";               
+           
+                $.each(response, function (indice, element) {
+                    //console.table(element.sigla);
+                    select += "<option value='" + element.id + "'>" + element.sigla + "</option>";               
+                });
+                select += "</select>";               
+
+                $('#PMNaturalidadeUf').empty();
+                $('#PMNaturalidadeUf').append(select);
+
+            });
