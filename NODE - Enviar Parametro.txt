@@ -1,0 +1,7 @@
+
+    res.render('index',{
+        Nome: nome,
+        Empresa: empresa,
+        usuarioAtivo: ativo,
+        arrayUsuarios: usuarios
+    });

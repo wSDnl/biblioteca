@@ -1,0 +1,11 @@
+let nome = req.params.nome;
+    let empresa = req.params.empresa;
+    let ativo = req.params.ativo;
+
+    let usuarios = [
+        {nome: "Tiago", atatus: "ativo"},
+        {nome: "Daniela", atatus: "ativo"},
+        {nome: "Lisa", atatus: "ativo"},
+    ]
+
+  

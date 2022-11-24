@@ -1,0 +1,12 @@
+------------------------------------------------------------ CRIAR NOVA APLICAÇÃO 
+npm init
+------------------------------------------------------------ INSTALAR EXPRESS
+npm install express --save
+------------------------------------------------------------ INSTALAR EJS
+npm install ejs --save
+---------------------------------------------------------------- INICIAR APLICAÇÃO 
+node index.js
+---------------------------------------------------------- INSTALAR NODEMON GLOBAL
+npm install nodemon -g
+------------------------------------- INICIAR SERVIDOR COM CARREGAMENTO AUTOMATICO
+nodemon index.js
