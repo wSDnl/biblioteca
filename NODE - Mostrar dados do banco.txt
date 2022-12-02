@@ -1,0 +1,11 @@
+// ** ROTAS
+app.get("/",(req,res) => {
+
+    // ** MOSTRA DADOS DO BANCO "SELECT * FROM "
+    Pergunta.findAll({ raw:true, order:[['id','DESC']] }).then(perguntasAll => {
+        res.render('index',{
+            perguntas: perguntasAll
+        });
+    });
+
+});

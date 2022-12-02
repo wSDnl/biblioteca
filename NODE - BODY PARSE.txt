@@ -1,0 +1,13 @@
+// ** BODY PARSER ( RESPONSAVEL POR TRADUZIR OS ADOS ENVIADOS DO FORMULARIO )
+const bodyParser = require('body-parser');
+// ** DECODIFICA OS DADOS ENVIADOS PELO FORM
+app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.json());
+
+
+...
+
+
+PEGAR DADOS ENVIADOS
+    let titulo = req.body.titulo;
+    let desc = req.body.desc;

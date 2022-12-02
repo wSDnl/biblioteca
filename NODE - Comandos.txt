@@ -1,8 +1,8 @@
 ------------------------------------------------------------ CRIAR NOVA APLICAÇÃO 
 npm init
------------------------------------------------------------- INSTALAR EXPRESS
+----------------------------------------------------------------- INSTALAR EXPRESS
 npm install express --save
------------------------------------------------------------- INSTALAR EJS
+--------------------------------------------------------------------- INSTALAR EJS
 npm install ejs --save
 ---------------------------------------------------------------- INICIAR APLICAÇÃO 
 node index.js
@@ -10,3 +10,10 @@ node index.js
 npm install nodemon -g
 ------------------------------------- INICIAR SERVIDOR COM CARREGAMENTO AUTOMATICO
 nodemon index.js
+------------------------ INSTALAR BODY PARSER (SERVE PARA RECEBER DADOS DE UM FORM)
+npm install body-parser --save
+---------------------------------------------------------------- INSTALAR SEQUELIZE
+npm install --save sequelize 
+npm install --save mysql2
+
+

@@ -1,0 +1,8 @@
+        // ** SALVA DADOS NO BANCO ( INSERT )
+        Pergunta.create({
+            titulo: titulo,
+            descrcao: desc
+        }).then(() => {
+            //res.redirect("/"); 
+            res.render('sucesso');
+        });

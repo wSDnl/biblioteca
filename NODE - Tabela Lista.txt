@@ -1,0 +1,14 @@
+<table class="table">
+        <tr>
+            <th>#</th>
+            <th>Titulo</th>
+            <th>Descrição</th>
+        </tr>
+        <% perguntas.forEach( perguntas => { %>        
+            <tr>
+                <td> <%= perguntas.id %> </td>
+                <td> <%= perguntas.titulo %> </td>
+                <td> <%= perguntas.descricao %> </td>
+            </tr>
+        <% }) %>
+</table>

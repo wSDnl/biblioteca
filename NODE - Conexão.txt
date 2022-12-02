@@ -1,0 +1,25 @@
+// ** SEQUELIZE
+const Sequelize = require('sequelize');
+
+// ** NOME TABELA , USUARIO , SENHA, { HOST , TIPO DE BANCO }
+const connection = new Sequelize('af1012','af1012','Tiagoweb1012!',{
+    host:'af1012.mysql.dbaas.com.br',
+    dialect:'mysql'
+});
+
+module.exports = connection;
+
+
+
+===========================================================================
+
+
+// ** CARREGA CONEXÃO
+const connection = require('./database/database');
+
+// ** TESTE DE CONEXÃO
+connection.authenticate().then(()=>{
+    console.log("conn ok");
+}).catch((msgErro) => {
+    console.log("conn erro");
+});
