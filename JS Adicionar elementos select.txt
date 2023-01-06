@@ -2,3 +2,6 @@
 const select = document.querySelector('#selEstadoNovoDocumento');
 select.options[select.options.length] = new Option( response[i].nome , response[i].nome );
 
+// remover
+select.options.length = 0; 
+
