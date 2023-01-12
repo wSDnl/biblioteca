@@ -1,0 +1,15 @@
+    $.ajax({
+        url: "/get-name-user",
+        data: { teste: "#1234" },
+        type: "POST",
+        beforeSend: function() {},
+        success: function(response) {
+            if (response != undefined && response != '') {
+                $('#nameUser').empty()
+                $('#nameUser').append(response)
+            }
+        },
+        error: function (retorno) { 
+            console.log("erro")
+        },
+    }); 
