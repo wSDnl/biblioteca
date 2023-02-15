@@ -1,0 +1,18 @@
+var mysql            = require('mysql2');
+
+
+   var con = mysql.createConnection({
+        host: config.HOST,
+        user: config.USER,
+        password: config.PASS,
+        database: config.DB
+    });
+    
+    const sqlQuery = "SELECT sum( cast( replace(valor,',','.') as decimal(18,2)) * qtde ) as total FROM sg_prest_vendas_produtos where id_venda = '"+ req.body.id_venda +"' "
+    con.connect(function(err) {
+    if (err) throw err;
+    con.query(sqlQuery, function (err, result, fields) {
+        if (err) throw err;
+        console.log(result);
+    });
+    });
